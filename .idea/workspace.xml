@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5399773b-b197-4960-a1e8-94bbefbb3f26" name="Changes" comment="">
+    <list default="true" id="5399773b-b197-4960-a1e8-94bbefbb3f26" name="Changes" comment="UI + Structure Tab Complete + Tracking Tag Complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extension/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/extension/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extension/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/extension/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extension/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/extension/popup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +64,21 @@
       <option name="project" value="LOCAL" />
       <updated>1743355002731</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="UI + Structure Tab Complete + Tracking Tag Complete">
+      <option name="closed" value="true" />
+      <created>1743448404873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743448404873</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ist" />
-    <option name="LAST_COMMIT_MESSAGE" value="ist" />
+    <MESSAGE value="UI + Structure Tab Complete + Tracking Tag Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI + Structure Tab Complete + Tracking Tag Complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
