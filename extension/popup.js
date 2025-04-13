@@ -63,23 +63,48 @@ function formatLastModified(dateString) {
 function displayHeadings(tag, headings) {
     const container = document.getElementById(tag);
     const countElement = document.getElementById(tag.toUpperCase() + "Count");
+    const toggleIcon = document.getElementById("toggle" + tag.toUpperCase());
 
-    container.innerHTML = ""; // Clear previous content
-    countElement.innerText = headings.length; // Update count
+    container.innerHTML = "";
+    countElement.innerText = headings.length;
 
     if (headings.length > 0) {
-        let ul = document.createElement("ul");
-        headings.forEach(text => {
-            let li = document.createElement("li");
-            li.textContent = text;
-            ul.appendChild(li);
+        headings.forEach((text, index) => {
+            let div = document.createElement("div");
+            div.textContent = text;
+            if (index >= 4) div.classList.add("hidden");
+            container.appendChild(div);
         });
-        container.appendChild(ul);
+
+        if (headings.length > 4) {
+            toggleIcon.classList.remove("d-none");
+            toggleIcon.classList.remove("rotated");
+            toggleIcon.textContent = "▶";
+
+            toggleIcon.onclick = () => {
+                const hiddenItems = container.querySelectorAll(".hidden");
+                const isExpanded = hiddenItems.length === 0;
+
+                container.querySelectorAll("div").forEach((el, index) => {
+                    if (index >= 4) el.classList.toggle("hidden");
+                });
+
+                if (isExpanded) {
+                    toggleIcon.classList.remove("rotated");
+                    toggleIcon.textContent = "▶";
+                } else {
+                    toggleIcon.classList.add("rotated");
+                    toggleIcon.textContent = "▼";
+                }
+            };
+        } else {
+            toggleIcon.classList.add("d-none");
+        }
     } else {
         container.innerText = `No ${tag.toUpperCase()} found`;
+        toggleIcon.classList.add("d-none");
     }
 }
-
 
 // Function to extract SEO details from the webpage
 function extractSEOData() {

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5399773b-b197-4960-a1e8-94bbefbb3f26" name="Changes" comment="UI + Structure Tab Complete + Tracking Tag Complete" />
+    <list default="true" id="5399773b-b197-4960-a1e8-94bbefbb3f26" name="Changes" comment="Overview tab UI update + Add new Logics and Functionality">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/extension/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/extension/popup.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,12 +23,12 @@
     &quot;assignee&quot;: &quot;Kazuto335&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Kazuto335/seo-tool-extension.git&quot;,
-    &quot;accountId&quot;: &quot;fcc65786-37f6-4a23-bc0e-12ff64bdf383&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Kazuto335/seo-tool-extension.git",
+    "accountId": "903f1665-15c9-4338-8593-8e2cf818d54f"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -79,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744139765194</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Overview tab UI update + Add new Logics and Functionality">
+      <option name="closed" value="true" />
+      <created>1744548630289</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744548630289</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,7 +108,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ist" />
     <MESSAGE value="UI + Structure Tab Complete + Tracking Tag Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI + Structure Tab Complete + Tracking Tag Complete" />
+    <MESSAGE value="Overview tab UI update + Add new Logics and Functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Overview tab UI update + Add new Logics and Functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

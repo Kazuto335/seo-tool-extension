@@ -44,15 +44,32 @@
     .tab-content.active {
         display: block;
     }
+    .toggle-icon {
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    user-select: none;
+    }
+    .toggle-icon.rotated {
+        transform: rotate(90deg);
+    }
+    .heading-text div {
+        padding-left: 10px;
+        padding-top: 3px;
+    }
+    .heading-text .hidden {
+        display: none;
+    }
 </style>
 <body>
 <div class="tab-buttons">
-    <button class="tab-link active" data-tab="overview">Overview</button>
-    <button class="tab-link" data-tab="structure">Structure</button>
+    <button class="tab-link" data-tab="overview">Overview</button>
+    <button class="tab-link active" data-tab="structure">Structure</button>
     <button class="tab-link" data-tab="tags">Tracking Tags</button>
 </div>
 
-<div id="overview" class="tab-content active">
+<div id="overview" class="tab-content">
     <div class="container text-center rounded border">
         <span id="platform" class="fs-2 fw-bold"></span>
         <br>
@@ -89,19 +106,36 @@
     </div>
 </div>
 
-<div id="structure" class="tab-content">
-    <h4>Structure</h4>
-    <p><b>Title:</b> <span id="title"></span></p>
-    <p><b>Description:</b> <span id="description"></span></p>
-
+<div id="structure" class="tab-content active">
+    <div class="row border rounded">
+        <div class="col"><b>Title</b></div>
+        <div class="col text-end">60/60</div>
+        <div class="row"><h4 id="title">TiTle</h4></div>
+    </div>
+    <div class="row border rounded mt-2">
+        <div class="col"><b>Description</b></div>
+        <div class="col text-end">160/160</div>
+        <div class="row"><p id="description">Description</p></div>
+    </div>
 
     <div class="highlight-box">
-        <label class="fw-bold">H1 (<span id="H1Count">0</span>):</label>
-        <p id="h1"></p>
-        <label class="fw-bold">H2 (<span id="H2Count">0</span>):</label>
-        <p id="h2"></p>
-        <label class="fw-bold">H3 (<span id="H3Count">0</span>):</label>
-        <p id="h3"></p>
+        <div class="d-flex justify-content-between align-items-center">
+            <label class="fw-bold">H1 (<span id="H1Count">0</span>)</label>
+            <span class="toggle-icon d-none" id="toggleH1">▶</span>
+        </div>
+        <div id="h1" class="heading-text"></div>
+
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <label class="fw-bold">H2 (<span id="H2Count">0</span>)</label>
+            <span class="toggle-icon d-none" id="toggleH2">▶</span>
+        </div>
+        <div id="h2" class="heading-text"></div>
+
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <label class="fw-bold">H3 (<span id="H3Count">0</span>)</label>
+            <span class="toggle-icon d-none" id="toggleH3">▶</span>
+        </div>
+        <div id="h3" class="heading-text"></div>
     </div>
 </div>
 
