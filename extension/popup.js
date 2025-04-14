@@ -25,8 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
             if (results && results[0] && results[0].result) {
                 let data = results[0].result;
 
-                document.getElementById("title").innerText = data.title;
-                document.getElementById("description").innerText = data.description;
+                // Set title and update length
+                const title = data.title || "";
+                document.getElementById("title").innerText = title;
+                document.querySelector("#structure .row:nth-of-type(1) .col.text-end").innerText = `${title.length}/60`;
+                const titleLengthEl = document.querySelector("#structure .row:nth-of-type(1) .col.text-end");
+                titleLengthEl.style.color = title.length > 60 ? "red" : "inherit";
+                // Set description and update length
+                const description = data.description || "";
+                document.getElementById("description").innerText = description;
+                document.querySelector("#structure .row:nth-of-type(2) .col.text-end").innerText = `${description.length}/160`;
+                const descLengthEl = document.querySelector("#structure .row:nth-of-type(2) .col.text-end");
+                descLengthEl.style.color = description.length > 160 ? "red" : "inherit";
                 document.getElementById("canonical").innerText = data.canonical;
                 document.getElementById("robots").innerText = data.robots;
                 document.getElementById("wordCount").innerText = data.wordCount;

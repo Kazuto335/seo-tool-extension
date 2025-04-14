@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5399773b-b197-4960-a1e8-94bbefbb3f26" name="Changes" comment="Overview tab UI update + Add new Logics and Functionality">
+    <list default="true" id="5399773b-b197-4960-a1e8-94bbefbb3f26" name="Changes" comment="UI Update in Structure Tab">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extension/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/extension/popup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extension/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/extension/popup.js" afterDir="false" />
@@ -23,12 +23,12 @@
     &quot;assignee&quot;: &quot;Kazuto335&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Kazuto335/seo-tool-extension.git",
-    "accountId": "903f1665-15c9-4338-8593-8e2cf818d54f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Kazuto335/seo-tool-extension.git&quot;,
+    &quot;accountId&quot;: &quot;903f1665-15c9-4338-8593-8e2cf818d54f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -38,18 +38,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Zeus/JS Projects/seo-tool-extension",
-    "onboarding.tips.debug.path": "/home/zeus/JS Projects/seo-tool-extension/src/Main.java",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zeus/JS Projects/seo-tool-extension&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/zeus/JS Projects/seo-tool-extension/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744548630289</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="UI Update in Structure Tab">
+      <option name="closed" value="true" />
+      <created>1744551134426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744551134426</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,7 +117,8 @@
     <MESSAGE value="ist" />
     <MESSAGE value="UI + Structure Tab Complete + Tracking Tag Complete" />
     <MESSAGE value="Overview tab UI update + Add new Logics and Functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Overview tab UI update + Add new Logics and Functionality" />
+    <MESSAGE value="UI Update in Structure Tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI Update in Structure Tab" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
