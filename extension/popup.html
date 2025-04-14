@@ -61,8 +61,15 @@
     .heading-text .hidden {
         display: none;
     }
+    #updatePopup a {
+    text-decoration: none;
+    }
 </style>
 <body>
+<div id="updatePopup" class="alert alert-info d-none p-2 text-center rounded shadow-sm" role="alert">
+    <span id="updateMessage"></span><br>
+    <a href="https://github.com/Kazuto335/seo-tool-extension" target="_blank" class="btn btn-sm btn-primary mt-2">Update Now</a>
+</div>
 <div class="tab-buttons">
     <button class="tab-link active" data-tab="overview">Overview</button>
     <button class="tab-link" data-tab="structure">Structure</button>
