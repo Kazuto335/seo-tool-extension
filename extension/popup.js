@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
+    fetch("https://raw.githubusercontent.com/Kazuto335/seo-tool-extension/refs/heads/master/version.json")
+      .then(res => res.json())
+      .then(data => {
+        const remoteVersion = data.version;
+        const message = data.message || "New update available!";
+        const currentVersion = chrome.runtime.getManifest().version;
+
+        if (remoteVersion !== currentVersion) {
+            const updateBox = document.getElementById("updatePopup");
+            document.getElementById("updateMessage").innerText = message;
+            updateBox.classList.remove("d-none");
+        }
+      })
+      .catch(err => {
+        console.warn("Version check failed:", err);
+      });
+
     const tabLinks = document.querySelectorAll(".tab-link");
     const tabContents = document.querySelectorAll(".tab-content");
 
